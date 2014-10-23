@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TwoActivitiesLifecycle</string>
+    <string name="hello_world">Hola Barcelona</string>
+    <string name="form_info_hint">Introduce texto</string>
+    <string name="form_send_button">Enviame</string>
+    <string name="title_activity_second">SecondActivity</string>
+
+</resources>
