@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="classes">
+        <item>Desarrollo de Apps Móviles</item>
+        <item>Desarrollo de Apps en plataforma Android</item>
+        <item>Desarrollo de Apps en plataforma iOS</item>
+        <item>Desarrollo de Apps en plataforma Windows Phone</item>
+        <item>Desarrollo de Apps Multiplataforma</item>
+    </string-array>
+    
+</resources>
