@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UIToggleButton</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="pressme">Press me</string>
+    <string name="pressme_again">Press me again</string>
+
+</resources>
