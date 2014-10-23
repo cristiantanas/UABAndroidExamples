@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    
+    <TextView
+        android:id="@+id/sep1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/class_sep"
+        style="?android:attr/listSeparatorTextViewStyle" />
+
+    <TextView
+        android:id="@+id/classLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sep1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/class_name" />
+
+    <AutoCompleteTextView
+        android:id="@+id/classAutoComplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classLabel"
+        android:layout_alignBottom="@+id/classLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/classLabel"
+        android:ems="10" >
+        
+        <requestFocus />
+ 	</AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/creditLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classLabel"
+        android:layout_below="@+id/classLabel"
+        android:layout_marginTop="30dp"
+        android:text="@string/credits" />
+
+    <EditText
+        android:id="@+id/creditsEditText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/creditLabel"
+        android:layout_toRightOf="@+id/creditLabel"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/sep2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/creditLabel"
+        android:layout_marginTop="25dp"
+        android:text="@string/timetable_sep"
+        style="?android:attr/listSeparatorTextViewStyle" />
+
+    <TextView
+        android:id="@+id/dayOfWeekLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classLabel"
+        android:layout_below="@+id/sep2"
+        android:layout_marginTop="15dp"
+        android:text="@string/day_of_week" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dayOfWeekLabel"
+        android:layout_marginTop="10dp"
+        android:text="@string/monday" />
+    
+    <CheckBox
+        android:id="@+id/checkBoxTue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxMon"
+        android:layout_alignBottom="@+id/checkBoxMon"
+        android:layout_toRightOf="@+id/checkBoxMon"
+        android:text="@string/tuesday" />
+
+    <CheckBox
+        android:id="@+id/checkBoxWed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxTue"
+        android:layout_alignBottom="@+id/checkBoxTue"
+        android:layout_toRightOf="@+id/checkBoxTue"
+        android:text="@string/wednesday" />
+
+    <CheckBox
+        android:id="@+id/checkBoxThu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxWed"
+        android:layout_alignBottom="@+id/checkBoxWed"
+        android:layout_toRightOf="@+id/checkBoxWed"
+        android:text="@string/thursday" />
+
+    <CheckBox
+        android:id="@+id/checkBoxFri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBoxThu"
+        android:layout_alignBottom="@+id/checkBoxThu"
+        android:layout_toRightOf="@+id/checkBoxThu"
+        android:text="@string/friday" />
+
+    <TextView
+        android:id="@+id/hourLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classLabel"
+        android:layout_below="@+id/checkBoxMon"
+        android:layout_marginTop="20dp"
+        android:text="@string/hour" />
+
+    <TextView
+        android:id="@+id/defaultHourLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hourLabel"
+        android:layout_alignBottom="@+id/hourLabel"
+        android:layout_toRightOf="@+id/hourLabel"
+        android:layout_marginLeft="15dp"
+        android:text="@string/default_hour_label" />
+
+    <Button
+        android:id="@+id/setHourButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/defaultHourLabel"
+        android:layout_alignBottom="@+id/defaultHourLabel"
+        android:layout_toRightOf="@+id/defaultHourLabel"
+        android:layout_marginLeft="10dp"
+        android:text="@string/sethour" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/submit" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/saveButton"
+        android:text="@string/clear" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/clearButton"
+        android:text="@string/cancel" />
+
+</RelativeLayout>
