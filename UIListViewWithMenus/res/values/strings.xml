@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UIListViewWithMenus</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="removeElement">Eliminar</string>
+    <string name="shareElement">Compartir</string>
+    <string name="helpMenu">Ayuda</string>
+    <string name="moreHelpMenu">Más ayuda</string>
+    <string name="evenMoreHelpMenu">Aún más ayuda</string>
+    <string name="giveUpMenu">Bueno, no quiero más ayuda!</string>
+    <string name="addMenu">Añadir</string>
+    <string name="searchMenu">Buscar</string>
+    <string name="searchHint">Introdueix text</string>
+
+</resources>

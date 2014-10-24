@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/help"
+        android:title="@string/helpMenu"
+        android:showAsAction="never"/>
+    
+    <item 
+        android:id="@+id/moreHelp"
+        android:title="@string/moreHelpMenu"
+        android:showAsAction="never"/>
+	
+    <item
+        android:id="@+id/evenMoreHelp"
+        android:title="@string/evenMoreHelpMenu"
+        android:showAsAction="never">
+        <menu>
+            <item 
+                android:id="@+id/giveUp"
+                android:title="@string/giveUpMenu"/> 
+        </menu>
+	</item>
+    
+    <item 
+        android:id="@+id/search"
+        android:title="@string/searchMenu"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView"/>
+    
+    <item 
+        android:id="@+id/add"
+        android:title="@string/addMenu"
+        android:icon="@android:drawable/ic_menu_add"
+        android:showAsAction="ifRoom|withText"/>
+
+</menu>
