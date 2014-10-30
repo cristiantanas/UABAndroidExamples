@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PersistentDataSQLite</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="class_name">Nombre asignatura</string>
+    <string name="credits">Créditos</string>
+    <string name="class_sep">Datos asignatura</string>
+    <string name="timetable_sep">Horario</string>
+    <string name="day_of_week">Día de la semana</string>
+    <string name="monday">Lun</string>
+    <string name="tuesday">Mar</string>
+    <string name="wednesday">Mie</string>
+    <string name="thursday">Jue</string>
+    <string name="friday">Vie</string>
+    <string name="hour">Hora:</string>
+    <string name="default_hour_label">00:00</string>
+    <string name="sethour">Establecer</string>
+    <string name="submit">Guardar</string>
+    <string name="clear">Limpiar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="title_activity_courses_list">Lista asignaturas</string>
+    <string name="addNewCourseLabel">Nueva asignatura</string>
+
+</resources>
