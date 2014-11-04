@@ -23,6 +23,8 @@ public class CoursesNewFormActivty extends Activity {
 	
 	private static final String 		LOG_TAG = "PERSISTENT_DATA_SQLITE_COURSE_NEW_FORM_ACTIVITY";
 	
+	private SQLiteDataRepository sqliteDatabase;
+	
 	AutoCompleteTextView	classesAutoCompleteTextView;
 	EditText				numberOfCreditsEditText;
 	TextView				defaultHourTextView;
@@ -36,6 +38,9 @@ public class CoursesNewFormActivty extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		// Obtain an instance of the SQLiteDataRepository
+		sqliteDatabase = new SQLiteDataRepository(this);
 		
 		// Get a reference to the UI element
 		classesAutoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.classAutoComplete);
@@ -74,30 +79,49 @@ public class CoursesNewFormActivty extends Activity {
 		defaultHourTextView = (TextView) findViewById(R.id.defaultHourLabel);
 		
 		saveButton = (Button) findViewById(R.id.saveButton);
+		
+		// Set an OnClickListener for the SAVE button
 		saveButton.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				
+				// Get the values from the form's inputs
 				String courseName = classesAutoCompleteTextView.getText().toString();
 				int numberOfCredits = Integer.parseInt(numberOfCreditsEditText.getText().toString());
 				String checkBoxState = checkBoxStateMap.keySet().toString();
 				String hour = defaultHourTextView.getText().toString();
 				
-				SQLiteDataRepository sqliteDatabase = new SQLiteDataRepository(CoursesNewFormActivty.this);
+				// Open the database for writing
+				sqliteDatabase.openDatabaseForWrite();
+				
+				// Save the form data into the database
 				sqliteDatabase.saveCourse(courseName, numberOfCredits, checkBoxState, hour);
 				
 				Log.i(LOG_TAG, "Saved " + 
 						courseName + " " + numberOfCredits + " " + checkBoxState + " "+ hour + 
 						" to database.");
 				
+				// Clear the form's inputs
 				clearForm();
+				
+				// Set the result for the calling Activity
 				setResult(RESULT_OK);
 				finish();
 			}
 		});
 	}
 	
+	@Override
+	protected void onDestroy() {
+		
+		// Release the database resources
+		this.sqliteDatabase.release();
+		
+		super.onDestroy();
+	}
+	
+	// Resets the form's input Views
 	private void clearForm() {
 		
 		classesAutoCompleteTextView.setText("");
@@ -112,8 +136,10 @@ public class CoursesNewFormActivty extends Activity {
 		defaultHourTextView.setText(R.string.default_hour_label);
 	}
 	
+	// Called when the user clicks on one of the CheckBoxes, changing it's state
 	public void onCheckBoxClicked(View v) {
 		
+		// Save the ID of the CheckBox jointly with it's current state
 		CheckBox cb = (CheckBox) v;
 		checkBoxStateMap.put(cb.getId(), cb.isChecked());
 		
