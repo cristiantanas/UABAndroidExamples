@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ThreadingHandlerMessages</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="grumpyCat">Grumpy Cat</string>
+    <string name="load">Load image</string>
+    <string name="sayhello">Say hello</string>
+
+</resources>
