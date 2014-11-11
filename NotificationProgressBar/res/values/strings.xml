@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NotificationProgressBar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="newNotification">Send notification with progress</string>
+    <string name="title_activity_handle_notification">HandleNotificationActivity</string>
+    <string name="handleNotification">I have received an Intent from the Notification!</string>
+
+</resources>

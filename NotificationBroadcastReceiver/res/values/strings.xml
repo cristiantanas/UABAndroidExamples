@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NotificationBroadcastReceiver</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loadImage">Load image</string>
+    <string name="contentImageDescription">xkcd - Efficiency</string>
+    <string name="notificationIconDescription">Notification icon</string>
+    <string name="appName">Application name</string>
+    <string name="content">Content</string>
+
+</resources>
