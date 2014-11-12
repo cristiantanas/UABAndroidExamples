@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/getLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/getLocationLabel" />
+
+    <TextView
+        android:id="@+id/locationAccuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="130dp" />
+
+    <TextView
+        android:id="@+id/locationLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/locationTime"
+        android:layout_below="@+id/locationTime"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/locationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/locationAccuracy"
+        android:layout_below="@+id/locationAccuracy"
+        android:layout_marginTop="18dp" />
+
+    <TextView
+        android:id="@+id/locationLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/locationLatitude"
+        android:layout_below="@+id/locationLatitude"
+        android:layout_marginTop="18dp" />
+
+</RelativeLayout>
