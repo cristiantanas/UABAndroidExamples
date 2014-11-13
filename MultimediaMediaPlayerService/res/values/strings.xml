@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MultimediaMediaPlayerService</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="playDescription">Play</string>
+    <string name="pauseDescription">Pause</string>
+    <string name="stopDescription">Stop</string>
+
+</resources>

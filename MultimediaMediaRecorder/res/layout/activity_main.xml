@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/doingWhat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ToggleButton
+        android:id="@+id/audioPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textOn="@string/stopPlaying"
+        android:textOff="@string/startPlaying" />
+
+    <ToggleButton
+        android:id="@+id/audioRecording"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/audioPlaying"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textOn="@string/stopRecording"
+        android:textOff="@string/startRecording" />
+
+</RelativeLayout>

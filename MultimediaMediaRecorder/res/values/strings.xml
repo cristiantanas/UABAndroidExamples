@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MultimediaMediaRecorder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="startRecording">Start recording</string>
+    <string name="stopRecording">Stop recording</string>
+    <string name="startPlaying">Start playing</string>
+    <string name="stopPlaying">Stop playing</string>
+
+</resources>
