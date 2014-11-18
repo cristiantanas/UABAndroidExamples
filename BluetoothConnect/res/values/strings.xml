@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BluetoothConnect</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="discover">Device discovery</string>
+    <string name="discoverFooterView">Discover more devices</string>
+    <string name="clientMode">Connected in CLIENT mode.</string>
+    <string name="serverMode">Connected in SERVER mode.</string>
+    <string name="connecting">Connecting to remote Bluetooth device...</string>
+    <string name="connected">Connected to remote Bluetooth device.</string>
+    <string name="bluetoothError">Bluetooth error! See below.</string>
+    <string name="echoMessage">Hello, Bluetooth!</string>
+    <string name="appInfo">To enter SERVER mode press and hold the Device discovery button!</string>
+
+</resources>
