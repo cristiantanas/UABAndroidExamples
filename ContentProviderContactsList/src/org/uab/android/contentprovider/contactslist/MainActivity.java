@@ -41,8 +41,12 @@ public class MainActivity extends ListActivity {
 			} while (contactsListCursor.moveToNext());
 		}
 		
-		// Create an ArrayAdapter for the ArrayList previously created
-		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, contacts);
+		// Create an ArrayAdapter to display the contacts data
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+				this, 
+				android.R.layout.simple_list_item_1, 
+				contacts
+				);
 		
 		// Set the list's adapter
 		setListAdapter(adapter);
